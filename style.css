@@ -41,21 +41,29 @@ body {
 #toolbox{
     border-radius:0.5em;
     background-color: white;
-    padding: 0.5rem 0.2rem;
+    padding: 0.5rem 0.4rem;
     display: flex;
+    gap: 0.5rem;
     position: fixed;
     bottom: 2rem;
 }
 
 #toolbox > div{
-background-color: skyblue;
 display: flex;
-align-content: center;
+height: 3rem;
+width: 3rem;
+align-items: center;
 justify-content: center;
 }
 
+#toolbox > div:hover, #toolbox > div.active{
+    background-color: skyblue;
+    border-radius: 0.5rem;
+}
+
 #toolbox > div > i{
-font-size: 1.5rem;
+font-size: 2rem;
+text-align: center;
 }
 
 #properties{
